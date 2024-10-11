@@ -5,6 +5,7 @@ import React from "react";
 import Loading from "../components/loading";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Montserrat } from "next/font/google";
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={`antialiased`}>
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
