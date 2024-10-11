@@ -10,24 +10,5 @@ PathwayUS provides users with detailed information on various universities in th
 :white_check_mark: Responsive design for desktop and mobile users.<br>
 :small_orange_diamond: [Internationalization]Information available in both English and Korean.<br>
 
-- ## Tech Stack
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-[Tailwind CSS]([https://tailwindcss.com/](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhoXisDruJMDAq3Ltd-wuaMW2lGxck9wAKw&s))
-
-[Next-url]: https://nextjs.org/
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Tech Stack
+[Next.js](https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704)
