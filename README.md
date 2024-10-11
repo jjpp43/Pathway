@@ -8,7 +8,7 @@ PathwayUS provides users with detailed information on various universities in th
 :white_check_mark: University profiles with detailed statistics such as tuition, ranking, etc.<br>
 :white_check_mark: School comparison tool for side-by-side analysis.<br>
 :white_check_mark: Responsive design for desktop and mobile users.<br>
-- [ ]  Internationalization : Information available in both English and Korean.<br>
+:negative_squared_cross_mark: Internationalization - Information available in both English and Korean.<br>
 
 ## Built by
 
