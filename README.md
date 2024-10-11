@@ -11,6 +11,7 @@ PathwayUS provides users with detailed information on various universities in th
 :small_orange_diamond: [Internationalization]Information available in both English and Korean.<br>
 
 - ## Tech Stack
-![Next.js](https://cdn.worldvectorlogo.com/logos/next-js.svg) <br>
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
 [Tailwind CSS]([https://tailwindcss.com/](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhoXisDruJMDAq3Ltd-wuaMW2lGxck9wAKw&s))
 
