@@ -228,14 +228,15 @@ export default function Home() {
                 <div className="border-black md:text-3xl sm:text-2xl text-2xl font-semibold h-40 py-16  bg-white">
                   {selectedItem2.institution}
                 </div>
-                <div className="pb-16 flex flex-row justify-center">
+
+                {/* <div className="pb-16 flex flex-row justify-center">
                   <Image
                     src="/harvard.png"
                     alt="Picture of logo"
                     height={96}
                     width={72}
                   />
-                </div>
+                </div>*/}
                 <div className="space-y-4 pb-16">
                   <div className="text-xl font-semibold opacity-0 sm:opacity-100 md:opacity-100">
                     Ranking
