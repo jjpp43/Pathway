@@ -97,8 +97,8 @@ export default function Home() {
               height={96}
             />
           </div>
-          <div className="text-foreground md:text-5xl md:leading-tight">
-            <div className="font-semibold leading-tight py-4">
+          <div className="text-foreground ">
+            <div className="font-semibold text-2xl md:text-5xl md:leading-tight leading-tight py-4">
               Kick-start your next journey
             </div>
             <div className="text-lg font-medium pb-4">
