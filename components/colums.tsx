@@ -27,7 +27,6 @@ export const columns: ColumnDef<DataColumn>[] = [
     header: ({ column }) => {
       return <div className="text-center font-bold">Institution</div>;
     },
-    centered: false,
     cell: ({ row }) => {
       return <div className="py-4 pl-4">{row.getValue("institution")}</div>;
     },
@@ -47,14 +46,18 @@ export const columns: ColumnDef<DataColumn>[] = [
         </Button>
       );
     },
-    centered: true,
+    cell: ({ row }) => {
+      return <div className="text-center">{row.getValue("ranking")}</div>;
+    },
   },
   {
     accessorKey: "state",
     header: ({ column }) => {
       return <div className="font-bold">State</div>;
     },
-    centered: true,
+    cell: ({ row }) => {
+      return <div className="text-center">{row.getValue("state")}</div>;
+    },
   },
   {
     accessorKey: "tuition",
@@ -79,10 +82,8 @@ export const columns: ColumnDef<DataColumn>[] = [
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
       }).format(amount);
-
-      return <div className="tuition-cell">{formatted}</div>;
+      return <div className="tuition-cell text-center">{formatted}</div>;
     },
-    centered: true,
   },
   {
     accessorKey: "salary",
@@ -107,9 +108,8 @@ export const columns: ColumnDef<DataColumn>[] = [
         maximumFractionDigits: 0,
       }).format(amount);
 
-      return <div className="salary-cell">{formatted}</div>;
+      return <div className="salary-cell text-center">{formatted}</div>;
     },
-    centered: true,
   },
   {
     accessorKey: "enrollment",
@@ -129,9 +129,8 @@ export const columns: ColumnDef<DataColumn>[] = [
     },
     cell: ({ row }) => {
       const amount = row.getValue("enrollment") as number;
-      return <div className="enrollment-cell">{amount}</div>;
+      return <div className="enrollment-cell text-center">{amount}</div>;
     },
-    centered: true,
   },
   {
     accessorKey: "acceptanceRate",
@@ -152,9 +151,8 @@ export const columns: ColumnDef<DataColumn>[] = [
     cell: ({ row }) => {
       const amount = row.getValue("acceptanceRate");
       const formatted = amount + "%";
-      return <div className="acceptanceRate-cell">{formatted}</div>;
+      return <div className="acceptanceRate-cell text-center">{formatted}</div>;
     },
-    centered: true,
   },
   {
     accessorKey: "asianDiversity",
@@ -175,9 +173,8 @@ export const columns: ColumnDef<DataColumn>[] = [
     cell: ({ row }) => {
       const amount = row.getValue("asianDiversity");
       const formatted = amount + "%";
-      return <div className="asianDiversity-cell">{formatted}</div>;
+      return <div className="asianDiversity-cell text-center">{formatted}</div>;
     },
-    centered: true,
   },
   {
     accessorKey: "genderDistribution",
@@ -231,7 +228,6 @@ export const columns: ColumnDef<DataColumn>[] = [
         </div>
       );
     },
-    centered: false,
   },
   {
     accessorKey: "sportsTeam",
@@ -242,7 +238,9 @@ export const columns: ColumnDef<DataColumn>[] = [
         Teams
       </div>
     ),
-    centered: true,
+    cell: ({ row }) => {
+      return <div className="text-center">{row.getValue("sportsTeam")}</div>;
+    },
   },
   {
     accessorKey: "graduationRate",
@@ -254,9 +252,8 @@ export const columns: ColumnDef<DataColumn>[] = [
     cell: ({ row }) => {
       const amount = row.getValue("graduationRate");
       const formatted = amount + "%";
-      return <div className="graduationRate-cell">{formatted}</div>;
+      return <div className="graduationRate-cell text-center">{formatted}</div>;
     },
-    centered: true,
   },
   {
     accessorKey: "studentFacultyRatio",
@@ -265,7 +262,6 @@ export const columns: ColumnDef<DataColumn>[] = [
         Student:Faculty
       </div>
     ),
-    centered: false,
     cell: ({ row }) => {
       return <div className="pl-4">{row.getValue("studentFacultyRatio")}</div>;
     },
