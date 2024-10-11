@@ -2,10 +2,9 @@
 
 A comprehensive platform offering detailed information and comparisons for universities in the USA.
 <br>
+<img src="public/title.png" alt="Preview of Website" width="50%" />
 <br>
 <br>
-
-![Preview of Website](public/title.png)
 
 ## About
 
