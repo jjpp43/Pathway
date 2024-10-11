@@ -19,7 +19,6 @@ PathwayUS provides users with detailed information on various universities in th
 :yellow_square: Internationalization - Information available in both English and Korean.<br>
 <br>
 <br>
-<br>
 
 
 ## Built by
