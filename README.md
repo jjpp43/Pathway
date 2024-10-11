@@ -11,4 +11,4 @@ PathwayUS provides users with detailed information on various universities in th
 :small_orange_diamond: [Internationalization]Information available in both English and Korean.<br>
 
 ## Tech Stack
-[Next.js](https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704)
+![Next.js](https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704)
