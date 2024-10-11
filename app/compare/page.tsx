@@ -77,14 +77,14 @@ export default function Home() {
                 <div className="border-black md:text-3xl sm:text-2xl text-2xl font-semibold h-40 py-16  bg-white">
                   {selectedItem1.institution}
                 </div>
-                <div className="pb-16 flex flex-row items-start justify-center">
+                {/* <div className="pb-16 flex flex-row items-start justify-center">
                   <Image
                     src="/harvard.png"
                     alt="Picture of logo"
                     width={72}
                     height={96}
                   />
-                </div>
+                </div> */}
                 <div className="space-y-4 pb-16">
                   <div className="text-xl font-semibold">Ranking</div>
                   <Divider className="" />
