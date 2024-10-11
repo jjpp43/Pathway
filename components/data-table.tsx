@@ -72,12 +72,8 @@ export function DataTable<TData, TValue>({
                 data-state={row.getIsSelected() && "selected"}
               >
                 {row.getVisibleCells().map((cell) => {
-                  const isCentered = cell.column.columnDef.centered;
                   return (
-                    <TableCell
-                      key={cell.id}
-                      className={isCentered ? "py-4 text-center" : "py-4"}
-                    >
+                    <TableCell key={cell.id} className="py-4">
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
