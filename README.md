@@ -1,6 +1,7 @@
 # PathwayUS
 
 A comprehensive platform offering detailed information and comparisons for universities in the USA.
+[Visit Website](pathway-ten.vercel.app)
 <br>
 <br>
 <img src="public/title.png" alt="Preview of Website" width="60%" />
