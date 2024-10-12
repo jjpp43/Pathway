@@ -51,7 +51,14 @@ export default function NavBar() {
       {/* Brand and Links for Desktop */}
       <NavbarContent className="hidden sm:flex items-center" justify="center">
         <NavbarBrand className="lg:pr-4 sm:pr-2">
-          <Image src="/logo.png" alt="Picture of logo" width={24} height={32} />
+          <Link href={"/"}>
+            <Image
+              src="/logo.png"
+              alt="Picture of logo"
+              width={24}
+              height={32}
+            />
+          </Link>
         </NavbarBrand>
         <NavbarItem className="lg:px-4 sm:px-2">
           <Link
