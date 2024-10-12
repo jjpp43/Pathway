@@ -23,7 +23,7 @@ PathwayUS provides users with detailed information on various universities in th
 <br>
 <br>
 
-## Built by
+## Built with
 
 - ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 - ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
