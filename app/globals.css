@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer utilities {
   .text-balance {
@@ -14,6 +14,7 @@ body {
 
 @layer base {
   :root {
+    --font-montserrat: 'Montserrat', sans-serif;
     --background: 0 0% 100%;
     --foreground: 240 3% 12%;
     --card: 210 18% 96%;
