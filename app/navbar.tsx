@@ -50,7 +50,10 @@ export default function NavBar() {
       </NavbarContent>
 
       {/* Brand and Links for Desktop */}
-      <NavbarContent className="hidden sm:flex items-center" justify="center">
+      <NavbarContent
+        className="hidden sm:flex h-12 items-center"
+        justify="center"
+      >
         <NavbarBrand className="lg:pr-4 sm:pr-2">
           <Link href={"/"}>
             <Image
