@@ -13,6 +13,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import NavBar from "./navbar";
 import { Divider } from "@nextui-org/react";
 import Loading from "@/components/loading";
+import HoverButton from "./ui/hoverButton";
 
 //Import for internationalization
 //import { getDictionary } from "./dictionaries";
@@ -85,17 +86,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen bg-white flex-col py-16">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <div className="flex grow flex-col w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center gap-4 bg-primary  sm:py-4 md:py-8 md:px-48 md:flex-row  ">
-        {/* <Image
-          alt=""
-          width={2245}
-          height={1636}
-          data-nimg="1"
-          className="absolute w-screen bg-transparent left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-          src="/background.jpg"
-        /> */}
+      <div className="flex grow flex-col w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center  gap-4 bg-primary  sm:py-4 md:py-8 md:px-48 md:flex-row  ">
         {/* Box Area */}
-        <div className="py-2 sm:py-0 md:py-0"></div>
         <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-50 p-6 sm:p-8 md:px-12 w-4/5 sm:w-3/5 md:w-2/5  ">
           <div className="hidden sm:block">
             <Image
@@ -116,17 +108,12 @@ export default function Home() {
           </div>
           <div className="flex flex-row justify-between">
             {/* Explore Button */}
-            <Link
-              href={""}
-              onClick={scrollToElement}
-              className="flex items-center gap-5 self-start rounded-lg border-2 border-primary bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-            >
-              <span className="font-semibold">Explore</span>
-            </Link>
+            <HoverButton text="Explore" onClick={scrollToElement} />
+
             {/* Compare Button */}
             <Link
               href={"/compare"}
-              className="flex sm:hidden md:hidden items-center gap-2 self-start rounded-lg border-2 border-primary bg-background px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-card md:text-base"
+              className="flex md:hidden items-center gap-2 self-start rounded-full border-2 border-primary bg-background px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-card md:text-base"
             >
               <span className="font-semibold">Compare</span>
               <div className="text-primary">
@@ -144,19 +131,19 @@ export default function Home() {
           </div>
         </div>
         {/* Banner Image */}
-        <div className="flex items-center justify-center p-12 sm:px-32 md:w-3/5 md:pl-32 md:py-12">
+        <div className="flex items-center justify-end p-8 sm:px-32 md:w-3/5 md:pl-32 md:py-12">
           <Image
             src="/hero-desktop.png"
             width={1000}
             height={760}
-            className="hidden md:block"
+            className="rounded-lg hidden md:block"
             alt="Screenshot desktop version"
           />
           <Image
             src="/hero-mobile.png"
             width={560}
             height={620}
-            className="block md:hidden"
+            className="rounded-lg block md:hidden"
             alt="Screenshot mobile version"
           />
         </div>
