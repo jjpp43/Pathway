@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col text-background items-center bg-primary">
+    <div className="flex flex-col text-background items-center bg-primary bg-[url('/background.jpg')] bg-cover bg-end">
       <div className="flex flex-row w-full md:py-24 sm:py-8 md:px-48 sm:px-16  p-8">
         <div className="flex flex-col w-1/2">
           <Image

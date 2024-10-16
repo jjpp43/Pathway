@@ -85,7 +85,15 @@ export default function Home() {
   return (
     <main className="flex min-h-screen bg-white flex-col py-16">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <div className="flex grow flex-col w-screen items-center justify-between gap-4 bg-primary md:py-8 sm:py-4 md:flex-row md:px-48 ">
+      <div className="flex grow flex-col w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center gap-4 bg-primary  sm:py-4 md:py-8 md:px-48 md:flex-row  ">
+        {/* <Image
+          alt=""
+          width={2245}
+          height={1636}
+          data-nimg="1"
+          className="absolute w-screen bg-transparent left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
+          src="/background.jpg"
+        /> */}
         {/* Box Area */}
         <div className="py-2 sm:py-0 md:py-0"></div>
         <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-50 p-6 sm:p-8 md:px-12 w-4/5 sm:w-3/5 md:w-2/5  ">
@@ -98,10 +106,10 @@ export default function Home() {
             />
           </div>
           <div className="text-foreground ">
-            <div className="font-semibold text-2xl md:text-5xl md:leading-tight leading-tight py-4">
+            <div className="font-extrabold text-2xl md:text-5xl md:leading-tight leading-tight py-4">
               Kick-start your next journey
             </div>
-            <div className="text-lg font-medium pb-4">
+            <div className="text-lg text-card-foreground font-medium pb-4">
               Find the perfect school that fits your needs, all tailored to your
               goals
             </div>
