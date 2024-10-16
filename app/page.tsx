@@ -86,7 +86,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen bg-white flex-col py-16">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <div className="flex grow flex-col w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center  gap-4 bg-primary  sm:py-4 md:py-8 md:px-48 md:flex-row  ">
+      <div className="flex grow flex-col w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center  gap-4 sm:py-4 md:py-8 md:px-48 md:flex-row  ">
         {/* Box Area */}
         <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-50 p-6 sm:p-8 md:px-12 w-4/5 sm:w-3/5 md:w-2/5  ">
           <div className="hidden sm:block">
