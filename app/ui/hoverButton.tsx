@@ -20,7 +20,7 @@ const HoverButton: React.FC<HoverButtonProps> = ({
       <div className="absolute left-5 text-white group-hover:text-black duration-500 transition-all">
         {text}
       </div>
-      <div className="flex justify-end p-2 bg-background rounded-full h-full group-hover:w-full transition-all ease-in-out duration-500">
+      <div className="flex justify-end p-2 bg-background w-10 rounded-full h-full group-hover:w-full transition-all ease-in-out duration-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
