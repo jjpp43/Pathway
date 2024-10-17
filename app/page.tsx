@@ -153,7 +153,7 @@ export default function Home() {
       {/* Container for two text areas */}
       <div
         ref={scrollToRef}
-        className="flex flex-row justify-between md:py-36 sm:py-24 py-16 px-4 md:px-48 sm:px-8 xs:px-4"
+        className="flex flex-row justify-between md:py-48 sm:py-36 py-24 px-4 md:px-48 sm:px-8 xs:px-4"
       >
         <div className="md:text-6xl sm:text-5xl text-4xl font-semibold w-1/2">
           Find the best school that suits you.
