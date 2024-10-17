@@ -86,9 +86,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen bg-white flex-col py-16">
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <div className="flex grow flex-col w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center  gap-4 sm:py-4 md:py-8 md:px-48 md:flex-row  ">
+      <div className="flex flex-col grow w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center  gap-4 py-16 md:px-48 lg:flex-row  ">
         {/* Box Area */}
-        <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-50 p-6 sm:p-8 md:px-12 w-4/5 sm:w-3/5 md:w-2/5  ">
+        <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-50 p-6 sm:p-8 md:px-12 w-4/5 lg:w-2/5">
           <div className="hidden sm:block">
             <Image
               src="/logo.png"
@@ -113,9 +113,9 @@ export default function Home() {
             {/* Compare Button */}
             <Link
               href={"/compare"}
-              className="flex md:hidden items-center gap-2 self-start rounded-full border-2 border-primary bg-background px-4 py-3 text-sm font-medium text-primary transition-colors hover:bg-card md:text-base"
+              className="flex md:hidden items-center gap-2 self-start rounded-full border-4 border-primary bg-background px-4 py-3 text-sm transition-colors hover:bg-card md:text-base"
             >
-              <span className="font-semibold">Compare</span>
+              <span className="font-bold text-primary">Compare</span>
               <div className="text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
         </div>
         {/* Banner Image */}
-        <div className="flex items-center justify-end p-8 sm:px-32 md:w-3/5 md:pl-32 md:py-12">
+        <div className="flex items-center justify-end sm:py-8 md:py-4 w-4/5 lg:w-2/5 ">
           <Image
             src="/hero-desktop.png"
             width={1000}

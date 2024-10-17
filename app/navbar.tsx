@@ -35,10 +35,10 @@ export default function NavBar() {
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="flex flex-row fixed top-0 z-50 sm:px-8 md:px-48 py-3 bg-white justify-between"
+      className="flex flex-row fixed top-0 z-30 sm:px-8 md:px-48 py-3 bg-white justify-between"
     >
       {/* Mobile Menu Toggle */}
-      <NavbarContent className="sm:hidden" justify="start">
+      <NavbarContent className="hidden" justify="center">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close" : "Open"} />
       </NavbarContent>
 
@@ -100,7 +100,7 @@ export default function NavBar() {
       </NavbarContent>
 
       {/* Compare Button */}
-      <NavbarContent justify="end">
+      <NavbarContent className="hidden sm:block" justify="end">
         <NavbarItem>
           {/* Don't display for the url path */}
           {currentPath !== "/compare" && (

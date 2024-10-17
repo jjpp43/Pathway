@@ -17,10 +17,10 @@ const HoverButton: React.FC<HoverButtonProps> = ({
       onClick={onClick}
       className="flex flex-row relative justify-end group w-36 items-center rounded-full bg-black p-1 text-sm font-bold"
     >
-      <div className="absolute left-5 text-white group-hover:text-black duration-500 transition-all z-20">
+      <div className="absolute left-5 text-white group-hover:text-black duration-500 transition-all">
         {text}
       </div>
-      <div className="flex justify-end p-2 bg-background rounded-full h-full w-10 group-hover:w-full transition-all ease-in-out duration-500">
+      <div className="flex justify-end p-2 bg-background rounded-full h-full group-hover:w-full transition-all ease-in-out duration-500">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
