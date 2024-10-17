@@ -14,6 +14,8 @@ import NavBar from "./navbar";
 import { Divider } from "@nextui-org/react";
 import Loading from "@/components/loading";
 import HoverButton from "./ui/hoverButton";
+import FormCard from "./ui/formcard";
+import SlidingFormCard from "./ui/slidingFormCard";
 
 //Import for internationalization
 //import { getDictionary } from "./dictionaries";
@@ -84,7 +86,7 @@ export default function Home() {
   // };
 
   return (
-    <main className="flex min-h-screen bg-white flex-col py-16">
+    <main className="flex min-h-screen bg-white flex-col pt-16">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <div className="flex flex-col grow w-screen items-center justify-between bg-[url('/background.jpg')] bg-cover bg-center  gap-4 py-16 md:px-48 lg:flex-row  ">
         {/* Box Area */}
@@ -168,13 +170,13 @@ export default function Home() {
       </div>
       {/* Table Title Tab*/}
       <div className="w-auto md:px-48 sm:px-16 py-2 text-3xl font-semibold">
-        <span className="bg-card py-4 px-8 rounded-t-lg">
+        <span className="bg-accent-foreground text-card py-4 px-8 rounded-t-lg">
           University Statistics
         </span>
       </div>
       {/* Container for DataTable */}
       <div
-        className={`flex flex-col bg-card md:pb-8 md:px-16 sm:px-4 items-end transition-all duration-500 ease-in-out ${
+        className={`flex flex-col bg-accent-foreground md:pb-8 md:px-16 sm:px-4 items-end transition-all duration-500 ease-in-out ${
           isChecked ? "w-full" : "w-full md:px-48"
         }`}
       >
@@ -183,7 +185,7 @@ export default function Home() {
           <div className="grid gap-1.5 leading-none">
             <label
               htmlFor="expand"
-              className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+              className="text-sm text-card font-semibold leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
             >
               <p>{isChecked ? "Expanded" : "Expand"}</p>
             </label>
@@ -202,16 +204,17 @@ export default function Home() {
             onClick={hidden}
             className={`relative flex ${
               isHidden ? "flex-col" : "flex-col-reverse"
-            } items-center py-1.5 px-4 bg-primary border-2 border-background rounded-lg w-full text-background overflow-hidden group transition-all duration-300`}
+            } items-center py-1.5 px-4 bg-primary bg-[url('/background.jpg')] bg-cover bg-bottom rounded-lg w-full text-background group transition-all duration-300`}
           >
             <div className="absolute inset-0 bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
-            <div className="text-background relative z-10">
+            <div className="text-background font-medium relative z-10">
               {isHidden ? "Load more" : "Show Less"}
             </div>
             <div className="pt-0.5 px-4 rounded-lg bg-background"></div>
           </button>
         </div>
       </div>
+      <SlidingFormCard />
     </main>
   );
 }
