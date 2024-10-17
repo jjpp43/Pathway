@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-stretch">
-      <div className="my-12 py-20 border-b bg-[url('/background.jpg')] bg-cover bg-center flex flex-col items-center">
+      <div className="my-8 pb-24 pt-32 border-b bg-[url('/background.jpg')] bg-cover bg-center flex flex-col items-center">
         <div className="text-4xl md:text-5xl text-background font-semibold">
           Compare Schools
         </div>
