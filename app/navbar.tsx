@@ -45,7 +45,14 @@ export default function NavBar() {
       {/* Brand for Mobile */}
       <NavbarContent className="sm:hidden" justify="center">
         <NavbarBrand>
-          <Image src="/logo.png" alt="Picture of logo" width={24} height={32} />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="Picture of logo"
+              width={24}
+              height={32}
+            />
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
