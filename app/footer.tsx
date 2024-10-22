@@ -11,8 +11,9 @@ export default function Footer() {
             width={48}
             height={60}
           />
-          <div className="py-8 md:w-1/3 w-1/2 font-medium leading-relaxed ">
-            <strong>Pathway US</strong> - Kick-start your next journey in the US
+          <div className="py-4 md:w-1/3 w-1/2 font-medium leading-relaxed ">
+            <div className="pb-2 text-lg font-semibold">Pathway US</div>
+            <div className="">Kick-start your next journey in the US</div>
           </div>
         </div>
 
