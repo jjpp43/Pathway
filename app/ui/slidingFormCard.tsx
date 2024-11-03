@@ -10,7 +10,7 @@ const SlidingFormCard = () => {
   return (
     <div
       ref={ref}
-      className="relative flex flex-col justify-between bg-[url('/background2.jpg')] bg-cover bg-center md:py-36 sm:py-24 py-16 px-4 md:px-48 sm:px-8 xs:px-4"
+      className="overflow-hidden relative flex flex-col justify-between bg-[url('/background2.jpg')] bg-cover bg-center md:py-36 sm:py-24 py-16 px-4 md:px-48 sm:px-8 xs:px-4"
     >
       <div className="absolute inset-0 bg-white opacity-30"></div>
 
